@@ -1,0 +1,20 @@
+ 527  export default take
+  528  npm install mocha
+  529  mkdir test
+  530  $EDITOR test/test.js
+  531  mkdir test
+  532  mocha
+  533  pwd
+  534  ls
+  535  mocha
+  536  npm i mocha --global
+  537  sudo npm i mocha --global
+  538  mocha
+  539  pwd
+  540  ls
+  541  mocha
+  542  mocha
+  543  mocha
+  544  npm test
+  545  npm run cover
+  546  history
