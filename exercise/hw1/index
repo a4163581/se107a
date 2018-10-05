@@ -148,3 +148,205 @@
   544  npm test
   545  npm run cover
   546  history
+mac004deiMac:neillodash mac046$
+mac004deiMac:neillodash mac046$ npm run cover
+npm ERR! missing script: cover
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_04_11_001Z-debug.log
+mac004deiMac:neillodash mac046$ npm install cover
+npm WARN neillodash@0.0.1 No repository field.
+
++ cover@0.2.9
+added 6 packages in 4.544s
+mac004deiMac:neillodash mac046$ npm run cover
+npm ERR! missing script: cover
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_04_35_111Z-debug.log
+mac004deiMac:neillodash mac046$ npm run cover
+
+> neillodash@0.0.1 cover /Users/mac046/Desktop/neillodash
+> nyc mocha
+
+sh: nyc: command not found
+npm ERR! file sh
+npm ERR! code ELIFECYCLE
+npm ERR! errno ENOENT
+npm ERR! syscall spawn
+npm ERR! neillodash@0.0.1 cover: `nyc mocha`
+npm ERR! spawn ENOENT
+npm ERR!
+npm ERR! Failed at the neillodash@0.0.1 cover script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_05_47_762Z-debug.log
+mac004deiMac:neillodash mac046$ sudo npm i nyc --global
+Password:
+/usr/local/bin/nyc -> /usr/local/lib/node_modules/nyc/bin/nyc.js
++ nyc@13.0.1
+added 176 packages in 6.329s
+mac004deiMac:neillodash mac046$ npm run cover
+
+> neillodash@0.0.1 cover /Users/mac046/Desktop/neillodash
+> nyc mocha
+
+
+
+  take
+    ✓ take([1,2,3], 2) equalTo [ 1, 2 ]
+
+
+  1 passing (20ms)
+
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |       75 |    57.14 |      100 |       75 |                   |
+ take.js  |       75 |    57.14 |      100 |       75 |                16 |
+----------|----------|----------|----------|----------|-------------------|
+mac004deiMac:neillodash mac046$ npm run all
+npm ERR! missing script: all
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_07_14_624Z-debug.log
+mac004deiMac:neillodash mac046$ npm run all
+
+> neillodash@0.0.1 all /Users/mac046/Desktop/neillodash
+> npm run test&&npm run cover&&npm run dist&&npm run docs
+
+
+> neillodash@0.0.1 test /Users/mac046/Desktop/neillodash
+> mocha
+
+
+
+  take
+    ✓ take([1,2,3], 2) equalTo [ 1, 2 ]
+
+
+  1 passing (8ms)
+
+
+> neillodash@0.0.1 cover /Users/mac046/Desktop/neillodash
+> nyc mocha
+
+
+
+  take
+    ✓ take([1,2,3], 2) equalTo [ 1, 2 ]
+
+
+  1 passing (10ms)
+
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |       75 |    57.14 |      100 |       75 |                   |
+ take.js  |       75 |    57.14 |      100 |       75 |                16 |
+----------|----------|----------|----------|----------|-------------------|
+
+> neillodash@0.0.1 dist /Users/mac046/Desktop/neillodash
+> browserify dist/pub.js -o dist/ccclodash.js
+
+sh: browserify: command not found
+npm ERR! file sh
+npm ERR! code ELIFECYCLE
+npm ERR! errno ENOENT
+npm ERR! syscall spawn
+npm ERR! neillodash@0.0.1 dist: `browserify dist/pub.js -o dist/ccclodash.js`
+npm ERR! spawn ENOENT
+npm ERR!
+npm ERR! Failed at the neillodash@0.0.1 dist script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_08_18_404Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! neillodash@0.0.1 all: `npm run test&&npm run cover&&npm run dist&&npm run docs`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the neillodash@0.0.1 all script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_08_18_488Z-debug.log
+mac004deiMac:neillodash mac046$ sudo npm i nyc --global
+/usr/local/bin/nyc -> /usr/local/lib/node_modules/nyc/bin/nyc.js
++ nyc@13.0.1
+updated 1 package in 4.107s
+mac004deiMac:neillodash mac046$ npm run all
+
+> neillodash@0.0.1 all /Users/mac046/Desktop/neillodash
+> npm run test&&npm run cover&&npm run dist&&npm run docs
+
+
+> neillodash@0.0.1 test /Users/mac046/Desktop/neillodash
+> mocha
+
+
+
+  take
+    ✓ take([1,2,3], 2) equalTo [ 1, 2 ]
+
+
+  1 passing (8ms)
+
+
+> neillodash@0.0.1 cover /Users/mac046/Desktop/neillodash
+> nyc mocha
+
+
+
+  take
+    ✓ take([1,2,3], 2) equalTo [ 1, 2 ]
+
+
+  1 passing (9ms)
+
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |       75 |    57.14 |      100 |       75 |                   |
+ take.js  |       75 |    57.14 |      100 |       75 |                16 |
+----------|----------|----------|----------|----------|-------------------|
+
+> neillodash@0.0.1 dist /Users/mac046/Desktop/neillodash
+> browserify dist/pub.js -o dist/ccclodash.js
+
+sh: browserify: command not found
+npm ERR! file sh
+npm ERR! code ELIFECYCLE
+npm ERR! errno ENOENT
+npm ERR! syscall spawn
+npm ERR! neillodash@0.0.1 dist: `browserify dist/pub.js -o dist/ccclodash.js`
+npm ERR! spawn ENOENT
+npm ERR!
+npm ERR! Failed at the neillodash@0.0.1 dist script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_09_19_034Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! neillodash@0.0.1 all: `npm run test&&npm run cover&&npm run dist&&npm run docs`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the neillodash@0.0.1 all script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/mac046/.npm/_logs/2018-10-05T04_09_19_101Z-debug.log
+mac004deiMac:neillodash mac046$ npm i mz --save
+npm WARN neillodash@0.0.1 No repository field.
+
++ mz@2.7.0
+added 5 packages in 2.69s
+mac004deiMac:neillodash mac046$ npm i qs --save-dev
+npm WARN neillodash@0.0.1 No repository field.
+
++ qs@6.5.2
+added 1 package in 1.71s
+mac004deiMac:neillodash mac046$
